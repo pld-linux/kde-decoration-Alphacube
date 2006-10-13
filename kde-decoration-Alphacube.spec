@@ -18,19 +18,18 @@ Requires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-%{_decoration} is an port of GNOME metacity theme, orignating
+%{_decoration} is an port of GNOME metacity theme, originating
 in one of Mac OS X theme.
 
 %description -l pl
-%{_decoration} to port tematu z GNOME, maj±cego swoje korzenie
-w jednym z tematów Mac OS X.
+%{_decoration} to port motywu z GNOME, maj±cego swoje korzenie
+w jednym z motywów Mac OS X.
 
 %prep
 %setup -q -n %{_decoration}-%{version}
 
 %build
 cp -f /usr/share/automake/config.sub admin
-#export UNSERMAKE=/usr/share/unsermake/unsermake
 #%{__make} -f Makefile.cvs
 
 %configure \
