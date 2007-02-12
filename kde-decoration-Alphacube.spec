@@ -1,6 +1,6 @@
 %define		_decoration Alphacube
 Summary:	Kwin decoration - %{_decoration}
-Summary(pl):	Dekoracja kwin - %{_decoration}
+Summary(pl.UTF-8):   Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
 Version:	0.3
 Release:	1
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %{_decoration} is an port of GNOME metacity theme, originating
 in one of Mac OS X theme.
 
-%description -l pl
-%{_decoration} to port motywu z GNOME, maj±cego swoje korzenie
-w jednym z motywów Mac OS X.
+%description -l pl.UTF-8
+%{_decoration} to port motywu z GNOME, majÄ…cego swoje korzenie
+w jednym z motywÃ³w Mac OS X.
 
 %prep
 %setup -q -n %{_decoration}-%{version}
